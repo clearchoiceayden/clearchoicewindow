@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional window cleaning in Dalton, GA and North Georgia. Residential and commercial. Streak-free guaranteed. Call for a free quote.">
+<meta name="keywords" content="window cleaning Dalton GA, window washing North Georgia, commercial window cleaning, residential window cleaning">
+<title>Clear Choice Window Co. | Dalton, GA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:   #0a1628;
+    --blue:   #1a3a6b;
+    --sky:    #2e86de;
+    --bright: #54c6f0;
+    --white:  #ffffff;
+    --off:    #f0f6ff;
+    --light:  #e8f4fd;
+    --gray:   #64748b;
+    --dark:   #1e293b;
+    --accent: #f59e0b;
+    --green:  #10b981;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--dark);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 70px;
+    background: rgba(10, 22, 40, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--bright); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--bright); }
+
+  .nav-cta {
+    background: var(--sky);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: var(--bright) !important; color: var(--navy) !important; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, #1a4a8a 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 5% 60px;
+  }
+
+  #hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(84,198,240,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  #hero::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(46,134,222,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(84,198,240,0.15);
+    border: 1px solid rgba(84,198,240,0.3);
+    color: var(--bright);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 99px;
+    margin-bottom: 24px;
+    width: fit-content;
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--bright);
+    border-radius: 50%;
+  }
+
+  .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: 0.95;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+
+  .hero-title span {
+    color: var(--bright);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+    max-width: 440px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--sky);
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--bright);
+    color: var(--navy);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--bright);
+    color: var(--bright);
+    transform: translateY(-2px);
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .stat {
+    background: rgba(255,255,255,0.04);
+    padding: 28px 24px;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .stat:hover { background: rgba(84,198,240,0.08); }
+
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: var(--bright);
+    letter-spacing: 0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .hero-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .window-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s;
+    animation: slideIn 0.6s ease both;
+  }
+
+  .window-card:nth-child(2) { animation-delay: 0.15s; }
+  .window-card:nth-child(3) { animation-delay: 0.3s; }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .window-card:hover {
+    background: rgba(84,198,240,0.08);
+    border-color: rgba(84,198,240,0.3);
+    transform: translateX(-4px);
+  }
+
+  .card-icon {
+    width: 52px; height: 52px;
+    background: var(--sky);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 22px;
+  }
+
+  .card-text h4 {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .card-text p {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+  }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--off);
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dde8f5;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blue);
+  }
+
+  .trust-item::before {
+    content: '✓';
+    width: 20px; height: 20px;
+    background: var(--green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 90px 5%; }
+
+  .section-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sky);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 5vw, 56px);
+    color: var(--navy);
+    letter-spacing: 0.02em;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: var(--gray);
+    max-width: 560px;
+    margin-bottom: 56px;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--white); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .service-card {
+    background: var(--off);
+    border: 1px solid #dde8f5;
+    border-radius: 16px;
+    padding: 36px 32px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--sky), var(--bright));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--sky);
+    box-shadow: 0 20px 40px rgba(46,134,222,0.12);
+  }
+
+  .service-card:hover::before { opacity: 1; }
+
+  .service-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .service-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .service-price {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sky);
+    background: rgba(46,134,222,0.08);
+    padding: 6px 14px;
+    border-radius: 99px;
+    display: inline-block;
+  }
+
+  /* ── WHY US ── */
+  #why {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #why::before {
+    content: '';
+    position: absolute;
+    top: -150px; right: -150px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(84,198,240,0.08) 0%, transparent 70%);
+  }
+
+  #why .section-title { color: var(--white); }
+  #why .section-sub { color: rgba(255,255,255,0.6); }
+  #why .section-tag { color: var(--bright); }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .why-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s;
+  }
+
+  .why-card:hover {
+    background: rgba(84,198,240,0.06);
+    border-color: rgba(84,198,240,0.2);
+    transform: translateY(-4px);
+  }
+
+  .why-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: rgba(84,198,240,0.2);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .why-card h4 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .why-card p {
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ── PRICING ── */
+  #pricing { background: var(--light); }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .price-card {
+    background: var(--white);
+    border: 1px solid #dde8f5;
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .price-card.featured {
+    background: var(--navy);
+    border-color: var(--sky);
+    transform: scale(1.04);
+  }
+
+  .price-card.featured h3 { color: var(--white); }
+  .price-card.featured p { color: rgba(255,255,255,0.6); }
+  .price-card.featured .price-amount { color: var(--bright); }
+  .price-card.featured .price-from { color: rgba(255,255,255,0.5); }
+
+  .featured-badge {
+    position: absolute;
+    top: -12px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--sky);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    border-radius: 99px;
+    white-space: nowrap;
+  }
+
+  .price-card:hover:not(.featured) {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(46,134,222,0.1);
+  }
+
+  .price-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .price-card p {
+    font-size: 13px;
+    color: var(--gray);
+    margin-bottom: 24px;
+  }
+
+  .price-from {
+    font-size: 12px;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .price-amount {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    color: var(--navy);
+    line-height: 1;
+    margin: 4px 0 24px;
+  }
+
+  .price-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .price-list li {
+    font-size: 14px;
+    color: var(--gray);
+    padding: 6px 0;
+    border-bottom: 1px solid #eef2f8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .price-card.featured .price-list li {
+    color: rgba(255,255,255,0.6);
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+
+  .price-list li::before {
+    content: '✓';
+    color: var(--green);
+    font-weight: 700;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  /* ── SERVICE AREA ── */
+  #area { background: var(--white); }
+
+  .area-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .area-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .area-item {
+    background: var(--off);
+    border: 1px solid #dde8f5;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .area-item::before {
+    content: '📍';
+    font-size: 14px;
+  }
+
+  .map-placeholder {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    border-radius: 20px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .map-placeholder span {
+    font-size: 48px;
+  }
+
+  .map-placeholder p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--off); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .contact-info { display: flex; flex-direction: column; gap: 24px; }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    background: var(--white);
+    border: 1px solid #dde8f5;
+    border-radius: 12px;
+  }
+
+  .contact-icon {
+    width: 44px; height: 44px;
+    background: var(--sky);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .contact-item h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  .contact-item p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+  }
+
+  .contact-form {
+    background: var(--white);
+    border: 1px solid #dde8f5;
+    border-radius: 20px;
+    padding: 40px;
+  }
+
+  .contact-form h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dde8f5;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: var(--off);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--sky);
+    background: var(--white);
+  }
+
+  .form-group textarea { min-height: 100px; resize: vertical; }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    background: var(--sky);
+    color: var(--white);
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+  }
+
+  .submit-btn:hover {
+    background: var(--bright);
+    color: var(--navy);
+    transform: translateY(-2px);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 48px 5% 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .footer-brand h3 span { color: var(--bright); }
+
+  .footer-brand p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    max-width: 260px;
+  }
+
+  .footer-links h4 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 16px;
+  }
+
+  .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+  .footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--bright); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.3);
+  }
+
+  .footer-bottom span { color: var(--bright); }
+
+  /* ── ANIMATIONS ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-stats { grid-template-columns: repeat(3, 1fr); }
+    .contact-grid { grid-template-columns: 1fr; }
+    .area-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .price-card.featured { transform: scale(1); }
+    .trust-bar { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Clear <span>Choice</span> Window Co.</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#area">Service Area</a></li>
+    <li><a href="#contact" class="nav-cta">Free Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">Dalton & North Georgia</div>
+      <h1 class="hero-title">
+        Crystal<br>
+        <span>Clear</span>
+        Windows
+      </h1>
+      <p class="hero-sub">Professional residential and commercial window cleaning serving Dalton and surrounding North Georgia communities. Streak-free results, every time — guaranteed.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        <a href="tel:+17065550000" class="btn-secondary">Call Us Today</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="window-card">
+        <div class="card-icon">🏠</div>
+        <div class="card-text">
+          <h4>Residential Cleaning</h4>
+          <p>Interior & exterior — streak-free guaranteed</p>
+        </div>
+      </div>
+      <div class="window-card">
+        <div class="card-icon">🏢</div>
+        <div class="card-text">
+          <h4>Commercial Storefronts</h4>
+          <p>Recurring contracts available</p>
+        </div>
+      </div>
+      <div class="window-card">
+        <div class="card-icon">⭐</div>
+        <div class="card-text">
+          <h4>Satisfaction Guaranteed</h4>
+          <p>We return at no charge if you're not happy</p>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Streak Free</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5★</div>
+          <div class="stat-label">Rated</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">GA</div>
+          <div class="stat-label">Licensed LLC</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">Fully Insured</div>
+  <div class="trust-item">Georgia LLC</div>
+  <div class="trust-item">Streak-Free Guarantee</div>
+  <div class="trust-item">Same-Day Response</div>
+  <div class="trust-item">Free Quotes</div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="section-tag">What We Do</div>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-sub">From single-story homes to multi-story commercial buildings — we deliver spotless results every time.</p>
+    <div class="services-grid fade-in">
+      <div class="service-card">
+        <span class="service-icon">🏠</span>
+        <h3>Residential Windows</h3>
+        <p>Interior and exterior window cleaning for homes of all sizes. We clean the glass, frames, sills, and screens — leaving your home looking its absolute best.</p>
+        <span class="service-price">Starting at $120</span>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🏢</span>
+        <h3>Commercial Storefronts</h3>
+        <p>Keep your business looking professional with regular window cleaning. We offer weekly, bi-weekly, and monthly recurring contracts for businesses of all sizes.</p>
+        <span class="service-price">Starting at $50/visit</span>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🔄</span>
+        <h3>Recurring Service</h3>
+        <p>Lock in your spot with a recurring cleaning schedule and save. Perfect for homeowners who want consistently clean windows and businesses that need regular maintenance.</p>
+        <span class="service-price">Ask about discounts</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="section-tag">Why Choose Us</div>
+    <h2 class="section-title">The Clear Choice Difference</h2>
+    <p class="section-sub">We're not just another cleaning company. We're your neighbors — committed to doing the job right every single time.</p>
+    <div class="why-grid fade-in">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h4>Streak-Free Guarantee</h4>
+        <p>Not satisfied with your results? We return at no charge within 24 hours. No questions asked.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h4>Fully Insured</h4>
+        <p>We carry general liability insurance so you're fully protected. Your home and business are in safe hands.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h4>Locally Owned</h4>
+        <p>We're a Dalton-based business — not a franchise. When you hire us your money stays in North Georgia.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h4>Professional & Reliable</h4>
+        <p>We show up on time, do what we say, and communicate clearly. Simple as that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="section-tag">Transparent Pricing</div>
+    <h2 class="section-title">Simple Pricing</h2>
+    <p class="section-sub">No hidden fees. No surprises. Just clean windows at a fair price. Contact us for an exact quote on your property.</p>
+    <div class="pricing-grid fade-in">
+      <div class="price-card">
+        <h3>Residential</h3>
+        <p>Homes of all sizes — exterior or interior & exterior</p>
+        <div class="price-from">Starting from</div>
+        <div class="price-amount">$120</div>
+        <ul class="price-list">
+          <li>Exterior windows</li>
+          <li>Interior & exterior available</li>
+          <li>Screens cleaned</li>
+          <li>Tracks & sills wiped</li>
+          <li>Streak-free guarantee</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="text-align:center; display:block;">Get a Quote</a>
+      </div>
+      <div class="price-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <h3>Commercial Recurring</h3>
+        <p>Storefronts and offices on a regular schedule</p>
+        <div class="price-from">Starting from</div>
+        <div class="price-amount">$50</div>
+        <ul class="price-list">
+          <li>Weekly, bi-weekly, or monthly</li>
+          <li>Exterior storefront windows</li>
+          <li>Glass doors included</li>
+          <li>Frames & sills</li>
+          <li>Recurring discount applied</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="text-align:center; display:block;">Get a Quote</a>
+      </div>
+      <div class="price-card">
+        <h3>One-Time Clean</h3>
+        <p>Moving in, selling your home, or special occasion</p>
+        <div class="price-from">Starting from</div>
+        <div class="price-amount">$75</div>
+        <ul class="price-list">
+          <li>Full interior & exterior</li>
+          <li>Deep clean service</li>
+          <li>Screens & tracks</li>
+          <li>Perfect for home sales</li>
+          <li>Same streak-free guarantee</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="text-align:center; display:block;">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="area">
+  <div class="area-grid">
+    <div>
+      <div class="section-tag">Where We Work</div>
+      <h2 class="section-title">Service Area</h2>
+      <p class="section-sub">Based in Dalton, GA — we serve the surrounding North Georgia communities. Not sure if we cover your area? Give us a call.</p>
+      <div class="area-list fade-in">
+        <div class="area-item">Dalton, GA</div>
+        <div class="area-item">Chatsworth, GA</div>
+        <div class="area-item">Calhoun, GA</div>
+        <div class="area-item">Ringgold, GA</div>
+        <div class="area-item">Tunnel Hill, GA</div>
+        <div class="area-item">Rocky Face, GA</div>
+        <div class="area-item">Cohutta, GA</div>
+        <div class="area-item">And more...</div>
+      </div>
+    </div>
+    <div class="map-placeholder">
+      <span>📍</span>
+      <p>Serving Dalton &<br>North Georgia</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Get a Free Quote</h2>
+    <p class="section-sub">Fill out the form and we'll get back to you within 24 hours with a free estimate.</p>
+    <div class="contact-grid fade-in">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone / Text</h4>
+            <p>(706) 000-0000</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>info@clearchoicewindowco.net</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Based In</h4>
+            <p>Dalton, Georgia</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Hours</h4>
+            <p>Mon–Sat: 8am – 6pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Request a Free Quote</h3>
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" name="first_name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="(706) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="john@email.com">
+          </div>
+          <div class="form-group">
+            <label>Service Type</label>
+            <select name="service">
+              <option value="">Select a service...</option>
+              <option>Residential — Exterior Only</option>
+              <option>Residential — Interior & Exterior</option>
+              <option>Commercial — One Time</option>
+              <option>Commercial — Recurring</option>
+              <option>Not Sure — Need a Quote</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Property Address</label>
+            <input type="text" name="address" placeholder="123 Main St, Dalton GA">
+          </div>
+          <div class="form-group">
+            <label>Additional Notes</label>
+            <textarea name="message" placeholder="Tell us about your windows — approximate number, any hard to reach areas, special requirements..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send My Free Quote Request →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>Clear <span>Choice</span> Window Co.</h3>
+      <p>Professional window cleaning serving Dalton and North Georgia. Streak-free guaranteed.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+17065550000">(706) 000-0000</a></li>
+        <li><a href="mailto:info@clearchoicewindowco.net">info@clearchoicewindowco.net</a></li>
+        <li><a href="#area">Dalton, Georgia</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>Clear Choice Window Cleaning LLC</span>. All rights reserved.</p>
+    <p>Dalton, GA | <span>Streak-Free Guaranteed</span></p>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
